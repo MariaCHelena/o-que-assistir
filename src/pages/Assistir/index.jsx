@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import MovieList from '../../components/MovieList'
 
 const Assistir = () => {
-  useEffect(() => {
-
-  }, [])
   return (
     <div>
-        Escolha a série ou filme yay
+        Escolha a série
+        <MovieList />
     </div>
   )
 }
