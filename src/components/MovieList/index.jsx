@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import MovieCard from '../MovieCard'
 
-const MovieList = () => {
-  
+const MovieList = props => {
+  const movies = props.movies
+  useEffect(() => {
+    console.log(movies)
+  },[])
   return (
-    <div>MovieList</div>
+    <div>
+      <div>{typeof movies}</div>
+    </div>
   )
 }
 
